@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@alpacahq/alpaca-trade-api": "^3.0.1",
+    "ws": "^8.15.1"
+  }
 }
