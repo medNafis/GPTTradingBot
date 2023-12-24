@@ -7,7 +7,6 @@ const dotenv = require('dotenv'); //Importing the dotenv package
 
 // Load environment variables from the .env file
 dotenv.config();
-console.log(process.env.OPENAI_API_KEY);
 // Server < -- > Data Source
 // Communication can go both ways
 // Data source can send us information
@@ -95,7 +94,7 @@ wss.on('message', async function(message){
             //Buy stock
             let order = await alpaca.createOrder({
                 symbol: tickerSymbol, //npmjs.com/package/@alpacahq/alpaca-trade-api?activeTab=readme
-                qty: 1,
+                qty: 100,
                 side: "buy",
                 type: "market",
                 time_in_force: "day" // if day ends, it wont trade.
