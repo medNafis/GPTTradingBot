@@ -94,7 +94,7 @@ wss.on('message', async function(message){
             //Buy stock
             let order = await alpaca.createOrder({
                 symbol: tickerSymbol, //npmjs.com/package/@alpacahq/alpaca-trade-api?activeTab=readme
-                qty: 100,
+                qty: 1,
                 side: "buy",
                 type: "market",
                 time_in_force: "day" // if day ends, it wont trade.
